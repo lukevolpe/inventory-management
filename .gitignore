@@ -1,0 +1,18 @@
+# Ignore node_modules in both client and server directories
+/client/node_modules/
+/server/node_modules/
+
+# Ignore all .env files in the root, client, and server directories
+.env
+/client/.env
+/server/.env
+
+# Ignore any .env.* files (e.g., .env.local, .env.production) in all directories
+.env.*
+/client/.env.*
+/server/.env.*
+
+# Optional: Ignore the build and .next directories if you have builds in these locations
+/client/.next/
+/server/build/
+/server/dist/
