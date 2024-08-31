@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import SidebarLink from '@/app/(components)/navbar/sidebar/sidebarLink';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Sidebar = () => {
   const thisYear = new Date();
@@ -40,7 +41,13 @@ const Sidebar = () => {
         }`}
       >
         <Link href="/" className="flex gap-3">
-          <div>Logo</div>
+          <Image
+            src="https://s3-inventorymanagement-bucket-lv.s3.eu-west-2.amazonaws.com/logo.png"
+            alt="Logo"
+            width={27}
+            height={27}
+            className="rounded w-8"
+          />
           <h1
             className={`${
               isSidebarCollapsed ? 'hidden' : 'block'
